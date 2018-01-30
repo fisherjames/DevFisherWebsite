@@ -1,0 +1,310 @@
+/* General device agnostic styles */
+
+body {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #000000;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.display-1 {
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+}
+
+.display-2 {
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+color: #90b7e2;
+}
+
+.display-3 {
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+color: #90b7e2;
+}
+
+.display-4 {
+font-family: 'Raleway', sans-serif;
+font-weight: 600;
+color: #90b7e2;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+#projects-text {
+  justify-content: center;
+  align-content: center;
+  color: #ffffff;
+}
+
+.cards {
+  margin: 0 auto;
+  margin-top: 1em;
+  background-color: #F5F5F5;
+}
+
+.social-icons {
+  margin-left: 0.5em;
+}
+
+@media (max-width: 575px) {
+
+  /* Mobile Navbar */
+  .navbar {
+    background-color: rgba(76, 134, 200, 1);
+    color: #ffffff;
+    height: 6vh;
+  }
+  
+  .mobile-nav ul li a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #ffffff;
+    margin-right: 1em;
+  }
+
+  .hey-mobile {
+    height: 100vh;
+    padding-top: 6vh;
+    padding-bottom: 3em;
+    background-color: rgba(76, 134, 200, 1);
+    border-bottom: 0.1em solid;
+    border-color: #000000;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  .display-2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  #fapp {
+    color: #ffffff;
+  }
+
+  #about-section {
+    height: 100vh;
+    width: 100%;
+    border-top: 0.1em solid;
+    border-color: #000000;
+    background-color: #F5F5F5;
+    padding: 1em;
+  }
+
+  #projects-section {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #4c86c8;
+    border-top: 0.1em solid;
+    border-color: #000000;
+    text-align: center;
+  }
+
+  #spynav-mobile {
+    height: 20vh;
+    border-bottom: 0.1em solid;
+    border-color: #000000;
+  }
+
+  #scroll {
+    height: 80vh;
+    overflow-y: scroll
+  }
+
+  #contactme-section {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #F5F5F5;
+    border-top: 0.1em solid;
+    border-color: #000000;
+    color: #000000;
+  }
+
+  #contactme-title {
+    text-align: center;
+  }
+  
+}
+
+@media (min-width: 575px) {
+/* Parallax background */
+#parallax {
+  background-image: url(../images/starry-sky.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+  /* Learn more arrow */
+  #learn-more {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+  }
+
+  #learn-more a {
+    color: #4c86c8;
+  }
+
+  #learn-more a:hover {
+    text-decoration: none;
+  }
+
+  @keyframes bounce{
+    0%    { transform: translateY(0); }
+    20%   { transform: translateY(0); }
+    40%   { transform: translateY(-30%); }
+    50%   { transform: translateY(0); }
+    60%   { transform: translateY(-10%); }
+    80%   { transform: translateY(0); }
+    100%  { transform: translateY(0); }
+  }
+  @-webkit-keyframes bounce {
+    0%    { -webkit-transform: translateY(0); }
+    20%   { -webkit-transform: translateY(0); }
+    40%   { -webkit-transform: translateY(-30%); }
+    50%   { -webkit-transform: translateY(0); }
+    60%   { -webkit-transform: translateY(-10%); }
+    80%   { -webkit-transform: translateY(0); }
+    100%  { -webkit-transform: translateY(0); }
+  }
+  @-moz-keyframes bounce {
+    0%    { -moz-transform: translateY(0); }
+    20%   { -moz-transform: translateY(0); }
+    40%   { -moz-transform: translateY(-30%); }
+    50%   { -moz-transform: translateY(0); }
+    60%   { -moz-transform: translateY(-10%); }
+    80%   { -moz-transform: translateY(0); }
+    100%  { -moz-transform: translateY(0); }
+  }
+
+  .fa-angle-down {
+    color: #ffffff;
+    font-size: 3em;
+    animation: bounce 3s infinite;  
+  }
+
+/* Main Navbar */
+.navbar { 
+  background-color: rgba(76, 134, 200, 0.7);
+  color: #ffffff;
+  height: 10vh;
+}
+
+.navbar ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #ffffff;
+  margin-right: 1em;
+}
+
+ul li a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #000000;
+  text-underline-position: under;
+}
+
+.hey-main {
+  height: 40vh;
+  padding-left: 3em;
+  padding-bottom: 3em;
+  background-color: rgba(76, 134, 200, 0.7);
+  border-bottom: 0.1em solid;
+  border-color: #000000;
+  color: #ffffff;
+  align-content: center;
+}
+
+#app {
+  color: #ffffff;
+}
+
+.icons {
+    margin-top: 3em;
+    margin-left: 3em;
+}
+
+#learn-more-section {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+}
+
+#projects-section {
+  height: 50vh;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #4c86c8;
+  border-top: 0.1em solid;
+  border-color: #000000;
+  text-align: center;
+}
+
+#about-section {
+  width: 100%;
+  border-top: 0.1em solid;
+  border-color: #000000;
+  background-color: #F5F5F5;
+  padding: 1em;
+}
+
+#about-title {
+    margin-top: 1.5em;
+}
+
+#about-text {
+    width: 50%;
+    height: 50%;
+    text-align: justify;
+    margin-left: 25%;
+    font-size: 1.5em;
+    
+}
+
+#scroll {
+  position: relative;
+  overflow-y: scroll;
+  height: 50vh;
+}
+
+#contactme-section {
+  height: 50vh;
+  width: 100%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #F5F5F5;
+  border-top: 0.1em solid;
+  border-color: #000000;
+  color: #000000;
+}
+
+#contactme-title {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+}
